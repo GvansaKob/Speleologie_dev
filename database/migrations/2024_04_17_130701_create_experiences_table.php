@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string("titre");
             $table->string("description");
             $table->string("select");
-            $table->boolean("reception_email");
+            $table->string("reception_email");
             $table->timestamps();
         });
     }

@@ -28,19 +28,21 @@ class ExperiencesController extends Controller
      */
     public function store(Request $request)
     {
+    
+
         // Création d'une nouvelle instance de Retour avec les données du formulaire
-        $retour = new Experiences();
-        $retour->email = $request->input('email');
-        $retour->nom_activite = $request->input('nom_activite');
-        $retour->site = $request->input('site');
-        $retour->date = $request->input('date');
-        $retour->titre = $request->input('titre');
-        $retour->description = $request->input('description');
-        $retour->select = $request->input('select');
-        $retour->reception_email = $request->input('reception_email');
+        $experience = new Experiences();
+        $experience->email = $request->input('email');
+        $experience->nom_activite = $request->input('nom_activite');
+        $experience->site = $request->input('site');
+        $experience->date = $request->input('date');
+        $experience->titre = $request->input('titre');
+        $experience->description = $request->input('description');
+        $experience->select = $request->input('select');
+        $experience->reception_email = $request->input('reception_email');
  
         // Enregistrement de la nouvelle instance dans la base de données
-        $retour->save();
+        $experience->save();
  
         // Redirection vers une autre page après l'enregistrement
         return redirect('/home');
