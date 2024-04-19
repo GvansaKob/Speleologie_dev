@@ -25,9 +25,19 @@ body {
     margin-left: 20px;
   }
 
+.button {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    background-color: green;
+    border-radius: 20px;
+}
+
 #experiences {
-    display: flex;
-    align-items: center;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: beige;
 }
 
 h1 {

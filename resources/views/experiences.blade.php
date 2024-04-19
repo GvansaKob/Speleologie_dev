@@ -18,34 +18,34 @@
         </nav>
     </section>
 
-    <form id="xperiences" method="POST" action="{{route('experiences')}}">
+    <form id="experiences" method="POST" action="{{route('experiences')}}">
         @csrf
         <p>
-            <label for="email">E-mail</label><br>
+            <label for="email">E-mail</label required><br>
             <input type="text" name="email" placeholder="gvansa@gmail.com">
         </p>
         <p>
-            <label for="nom_activite">Nom de l'activité :</label><br>
+            <label for="nom_activite">Nom de l'activité :</label required><br>
             <input type="text" name="nom_activite" placeholder="Spéléologie">
         </p>
         <p>
-            <label for="site">Nom du site :</label><br>
-            <input type="text" name="site" placeholder="Terrain 3">
+            <label for="site">Nom du site :</label required><br>
+            <input type="text" name="site" placeholder="Grotte 1">
         </p>
 
         <p>
-            <label for="date">Date de l'évènement</label><br>
+            <label for="date">Date de l'évènement</label required><br>
             <input type="date" name="date" placeholder="2024-02-04">
         </p>
         <p>
-            <label for="titre">Titre du retour :</label><br>
+            <label for="titre">Titre du retour :</label required><br>
             <input type="text" name="titre" placeholder="Problème avec un noeud">
         </p>
         <p>
-            <label for="description">Description de votre experience</label><br>
+            <label for="description">Description de votre experience</label required><br>
             <input type="text" name="description" placeholder="Message...">
         </p>
-        <label for="select">Êtes-vous satisfait de votre expérience ? :</label><br>
+        <label for="select">Êtes-vous satisfait de votre expérience ? :</label required><br>
         <select id="select" name="select">
             <option value="Pas satisfait">Peu satisfait</option>
             <option value="Peu satisfait">Pas satisfait</option>
@@ -54,16 +54,17 @@
             <option value="Très satisfait">Très satisfait</option>
         </select><br>
         <p>Acceptez-vous d'être contacté par email ?</p>
-        <input type="radio" name="reception_email" value="oui" checked>
+        <label>
+            <input type="radio" name="reception_email" value="oui" >
         Oui
-        </label> <br>
+        </label required> <br>
         <label>
             <input type="radio" name="reception_email" value="non">
             Non
-        </label><br><br>
+        </label required><br><br>
 
         <a href="{{route('experiences')}}">
-            <button type="submit">Soumettre</button>
+            <button class="button" type="submit">Soumettre</button>
         </a>
     </form>
 </body>
