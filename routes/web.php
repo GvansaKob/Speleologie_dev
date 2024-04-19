@@ -1,12 +1,10 @@
 <?php
 
 use App\Http\Controllers\ExperiencesController;
+use App\Http\Controllers\ModerateurController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
-Route::get('/', function () {
-    return view('home');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -27,6 +25,9 @@ Route::get('/home', function () {
 
 Route::post('/experiences', [ExperiencesController::class, 'store']);
 Route::get('/',[ExperiencesController::class, 'showConsultationExperience'])->name('show.experience');
+
+Route::get('/dashboard',[ModerateurController::class, 'showModerateur'])->name('dashboard');
+
 
 
 
