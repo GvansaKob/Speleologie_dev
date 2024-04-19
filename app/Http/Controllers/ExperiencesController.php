@@ -28,7 +28,6 @@ class ExperiencesController extends Controller
      */
     public function store(Request $request)
     {
-    
 
         // Création d'une nouvelle instance de Retour avec les données du formulaire
         $experience = new Experiences();
@@ -48,12 +47,17 @@ class ExperiencesController extends Controller
         return redirect('/home');
     }
 
+    public function showConsultationExperience()
+    {
+        $publishedpost = Experiences::all();
+        return view('home', ['publishedpost' => $publishedpost]);
+    }
+
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
-        //
     }
 
     /**

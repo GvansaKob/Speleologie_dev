@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire Experiences</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
 
     <p>
         <label for="date">Date de l'évènement</label><br>
-        <input type="text" name="date" placeholder="2024-02-04">
+        <input type="date" name="date" placeholder="2024-02-04">
     </p>
     <p>
         <label for="titre">Titre du retour :</label><br>
