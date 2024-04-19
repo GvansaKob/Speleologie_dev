@@ -1,4 +1,38 @@
 .logo{
     height: 200px;
     width: 250px;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header a{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+
+#experiences {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
