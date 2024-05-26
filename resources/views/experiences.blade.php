@@ -18,35 +18,36 @@
         </nav>
     </section>
 
-    <form id="experiences" method="POST" action="{{route('experiences')}}">
+    
+    <form id="experiences" method="POST" action="{{route('experiences.store')}}">
         @csrf
         <p>
-            <label for="email">E-mail</label required><br>
-            <input type="text" name="email" placeholder="gvansa@gmail.com">
+            <label for="email">E-mail</label ><br>
+            <input type="text" name="email" placeholder="gvansa@gmail.com" required>
         </p>
         <p>
-            <label for="nom_activite">Nom de l'activité :</label required><br>
-            <input type="text" name="nom_activite" placeholder="Spéléologie">
+            <label for="nom_activite">Nom de l'activité :</label><br>
+            <input type="text" name="nom_activite" placeholder="Spéléologie" required>
         </p>
         <p>
-            <label for="site">Nom du site :</label required><br>
-            <input type="text" name="site" placeholder="Grotte 1">
+            <label for="site">Nom du site :</label><br>
+            <input type="text" name="site" placeholder="Grotte 1" required>
         </p>
 
         <p>
-            <label for="date">Date de l'évènement</label required><br>
-            <input type="date" name="date" placeholder="2024-02-04">
+            <label for="date">Date de l'évènement</label><br>
+            <input type="date" name="date" placeholder="2024-02-04" required>
         </p>
         <p>
-            <label for="titre">Titre du retour :</label required><br>
-            <input type="text" name="titre" placeholder="Problème avec un noeud">
+            <label for="titre">Titre du retour :</label><br>
+            <input type="text" name="titre" placeholder="Problème avec un noeud" required>
         </p>
         <p>
-            <label for="description">Description de votre experience</label required><br>
-            <input type="text" name="description" placeholder="Message...">
+            <label for="description">Description de votre experience</label><br>
+            <input type="text" name="description" placeholder="Message..." required>
         </p>
-        <label for="select">Êtes-vous satisfait de votre expérience ? :</label required><br>
-        <select id="select" name="select">
+        <label for="select">Êtes-vous satisfait de votre expérience ? :</label><br>
+        <select id="select" name="select" required>
             <option value="Pas satisfait">Peu satisfait</option>
             <option value="Peu satisfait">Pas satisfait</option>
             <option value="Moyennement satisfait">Moyennement satisfait</option>
@@ -55,11 +56,11 @@
         </select><br>
         <p>Acceptez-vous d'être contacté par email ?</p>
         <label>
-            <input type="radio" name="reception_email" value="oui" >
+            <input type="radio" name="reception_email" value="oui"  required>
         Oui
         </label required> <br>
         <label>
-            <input type="radio" name="reception_email" value="non">
+            <input type="radio" name="reception_email" value="non" required>
             Non
         </label required><br><br>
 

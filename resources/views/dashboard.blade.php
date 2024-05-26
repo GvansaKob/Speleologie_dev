@@ -63,5 +63,8 @@
                 </tr>
                 @endforeach
             </table>
+            <a href="/moderateur" id="bouttonDashboard">
+                                <button>Consulter</button>
+                            </a>
     </section>
 </x-app-layout>

@@ -51,6 +51,7 @@ class ExperiencesController extends Controller
     {
         $publishedpost = Experiences::all();
         return view('home', ['publishedpost' => $publishedpost]);
+        return view('ModerationExperience', ['publishedpost' => $publishedpost]);
     }
 
     /**
